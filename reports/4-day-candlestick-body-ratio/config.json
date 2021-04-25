@@ -1,0 +1,72 @@
+{
+  "worker": {
+    "daysBefore": 4,
+    "daysAfter": 4,
+    "getTrendConditions": {
+      "previousTrend": [-7, -10, -15, -20, -30, -60],
+      "nextTrend": [7, 10, 15, 20, 30, 60]
+    }
+  },
+  "generateDynamicThreeDayBodyRatio": {
+    "prevThirdBodyRatioInterval": 10,
+    "prevSecondBodyRatioInterval": 10,
+    "yesterdayBodyRatioInterval": 10,
+    "currentBodyRatioInterval": 10
+  },
+  "mainThread": {
+    "symbols": [
+      [
+        "AAP", "APH", "CE", "DFS", "EXPD", "HAS", "JBHT", "MAS", "NOW", "PRU", "STZ", "VAR",
+        "AAPL", "APTV", "CERN", "DG", "EXPE", "HBAN", "JCI", "MCD", "NRG", "PSA", "SWK", "VFC",
+        "A", "APA", "CDNS", "DD", "EW", "GWW", "IVZ", "MAA", "NOC", "PPL", "STT", "USB", "AAL",
+        "APD", "CDW", "DE", "EXC", "HAL", "J", "MAR", "NOV", "PRGO", "STX", "V",
+        "ABBV", "ARE", "CF", "DGX", "EXR", "HBI", "JKHY", "MCHP", "NSC", "PSX", "SWKS", "VIAC",
+      ],[
+        "ABC", "ATO", "CFG", "DHI", "F", "HCA", "JNJ", "MCK", "NTAP", "PVH", "SYF", "VLO",
+        "ABMD", "ATVI", "CHD", "DHR", "FANG", "HD", "JNPR", "MCO", "NTRS", "PWR", "SYK", "VMC",
+        "ABT", "AVB", "CHRW", "DIS", "FAST", "HES", "JPM", "MDLZ", "NUE", "PXD", "SYY", "VNO",  
+        "ACN", "AVGO", "CHTR", "DISCA", "FB", "HFC", "K", "MDT", "NVDA", "PYPL", "T", "VRSK",
+        "ADBE", "AVY", "CI", "DISCK", "FBHS", "HIG", "KEY", "MET", "NVR", "QCOM", "TAP", "VRSN",
+      ],[
+        "ADI", "AWK", "CINF", "DISH", "FCX", "HII", "KEYS", "MGM", "NWL", "QRVO", "TDG", "VRTX",
+        "ADM", "AXP", "CL", "DLR", "FDX", "HLT", "KHC", "MHK", "NWS", "RCL", "TDY", "VTR",  
+        "ADP", "AZO", "CLX", "DLTR", "FE", "HOLX", "KIM", "MKC", "NWSA", "RE", "TEL", "VZ",
+        "ADSK", "BA", "CMA", "DOV", "FFIV", "HON", "KLAC", "MKTX", "O", "REG", "TFC", "WAB",
+        "AEE", "BAC", "CMCSA", "DOW", "FIS", "HPE", "KMB", "MLM", "ODFL", "REGN", "TFX", "WAT",
+      ],[
+        "AEP", "BAX", "CME", "DPZ", "FISV", "HPQ", "KMI", "MMC", "OKE", "RF", "TGT", "WBA", 
+        "AES", "BBY", "CMG", "DRE", "FITB", "HRB", "KMX", "MMM", "OMC", "RHI", "TIF", "WDC",
+        "AFL", "BDX", "CMI", "DRI", "FLIR", "HRL", "KO", "MNST", "ORCL", "RJF", "TJX", "WEC",
+        "AIG", "BEN", "CMS", "DTE", "FLS", "HSIC", "KR", "MO", "ORLY", "RL", "TMO", "WELL",
+        "AIV", "BIIB", "CNC", "DUK", "FLT", "HST", "KSS", "MOS", "OTIS", "RMD", "TMUS", "WFC",  
+      ],[
+        "AIZ", "BIO", "CNP", "DVA", "FMC", "HSY", "KSU", "MPC", "OXY", "ROK", "TPR", "WHR",
+        "AJG", "BK", "COF", "DVN", "FOX", "HUM", "L", "MRK", "PAYC", "ROL", "TROW", "WLTW",
+        "AKAM", "BKNG", "COG", "DXC", "FOXA", "HWM", "LB", "MRO", "PAYX", "ROP", "TRV", "WM",
+        "ALB", "BKR", "COO", "DXCM", "FRC", "IBM", "LDOS", "MS", "PBCT", "ROST", "TSCO", "WMB", 
+      ],[
+        "ALGN", "BLK", "COP", "EA", "FRT", "ICE", "LEG", "MSCI", "PCAR", "RSG", "TSN", "WMT",
+        "ALK", "BLL", "COST", "EBAY", "FTI", "IDXX", "LEN", "MSFT", "PEAK", "RTX", "TT", "WRB",
+        "ALL", "BMY", "COTY", "ECL", "FTNT", "IEX", "LH", "MSI", "PEG", "SBAC", "TTWO", "WRK",
+        "ALLE", "BR", "CPB", "ED", "FTV", "IFF", "LHX", "MTB", "PEP", "SBUX", "TWTR", "WST",  
+        "ALXN", "BRK.B", "CPRT", "EFX", "GD", "ILMN", "LIN", "MTD", "PFE", "SCHW", "TXN", "WU",
+      ],[
+        "AMAT", "BSX", "CRM", "EIX", "GE", "INCY", "LKQ", "MU", "PFG", "SEE", "TXT", "WY",
+        "AMCR", "BWA", "CSCO", "EL", "GILD", "INFO", "LLY", "MXIM", "PG", "SHW", "TYL", "WYNN",
+        "AMD", "BXP", "CSX", "EMN", "GIS", "INTC", "LMT", "MYL", "PGR", "SIVB", "UA", "XEL",  
+        "AME", "C", "CTAS", "EMR", "GL", "INTU", "LNC", "NBL", "PH", "SJM", "UAA", "XLNX",
+        "AMGN", "CAG", "CTL", "EOG", "GLW", "IP", "LNT", "NCLH", "PHM", "SLB", "UAL", "XOM",
+      ],[
+        "AMP", "CAH", "CTSH", "EQIX", "GM", "IPG", "LOW", "NDAQ", "PKG", "SLG", "UDR", "XRAY",
+        "AMT", "CARR", "CTVA", "EQR", "GOOG", "IPGP", "LRCX", "NEE", "PKI", "SNA", "UHS", "XRX",  
+        "AMZN", "CAT", "CTXS", "ES", "GOOGL", "IQV", "LUV", "NEM", "PLD", "SNPS", "ULTA", "XYL",
+        "ANET", "CB", "CVS", "ESS", "GPC", "IR", "LVS", "NFLX", "PM", "SO", "UNH", "YUM",
+        "ANSS", "CBOE", "CVX", "ETFC", "GPN", "IRM", "LW", "NI", "PNC", "SPG", "UNM", "ZBH",
+      ],[
+        "ANTM", "CBRE", "CXO", "ETN", "GPS", "ISRG", "LYB", "NKE", "PNR", "SPGI", "UNP", "ZBRA", 
+        "AON", "CCI", "D", "ETR", "GRMN", "IT", "LYV", "NLOK", "PNW", "SRE", "UPS", "ZION",
+        "AOS", "CCL", "DAL", "EVRG", "GS", "ITW", "MA", "NLSN", "PPG", "STE", "URI", "ZTS"
+      ]
+    ]
+  }
+}
